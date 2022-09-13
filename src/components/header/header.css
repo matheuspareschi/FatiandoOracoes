@@ -1,0 +1,26 @@
+.header__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.7rem;
+}
+
+.header__div {
+  display: flex;
+  justify-content: center;
+  width: 12rem;
+  background: #0c235a;
+  padding: 0.5rem;
+  align-items: center;
+  border-end-end-radius: 30px;
+  border-top-left-radius: 20px;
+}
+
+.header__tittle {
+  font-family: "Poppins", sans-serif;
+  color: #F5EBE0;
+  text-transform: lowercase;
+  padding: 0.2rem;
+  font-weight: 400;
+  font-style: italic;
+}
