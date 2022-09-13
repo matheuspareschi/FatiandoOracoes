@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./form.css";
 import { connect } from "react-redux";
 import { bindActionCreators } from "@reduxjs/toolkit";
@@ -70,6 +70,10 @@ const Form = ({ addOrdenedTextPronouns, addOrdenedText, addText, ereaseAll }) =>
   ];
   const [text, setText] = useState("");
   const [textArray, setArrayText] = useState("");
+
+  useEffect(() => {
+    tranformingText() 
+  }, [text])
 
   // Transforming text into an array.
   const tranformingText = () => {
